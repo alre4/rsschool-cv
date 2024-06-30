@@ -1,7 +1,7 @@
 #
 ### Name
 
-Алексей Палюхович
+Aliaksei Paliukhovich
 
 ### Contacts
 
