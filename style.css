@@ -1,3 +1,184 @@
-h1, p {
-    color: #111;
+.link {
+    transition: background-color 0.3s;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+.header {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-name {
+    margin: 15px 0 2px 0;
+    font-size: 2em;
+}
+
+.header-job-title {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-item li {
+    display: inline;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+
+.aside {
+    flex: 1 1 250px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.aside-section {
+    margin-bottom: 20px;
+}
+
+.aside-header{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.aside-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside-list-item {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.aside-image {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+
+
+.main {
+    flex: 3 1 600px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.main-section {
+    margin-bottom: 30px;
+}
+
+.main-header{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.section-content, .section-list {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.section-list {
+    padding-left: 20px;
+}
+
+.section-content .section-list {
+    margin-top: 0;
+}
+
+.article-header {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.projects-link {
+    padding: 5px 0;
+}
+
+
+
+.footer {
+    padding: 20px 0;
+    margin-top: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-item {
+    display: inline;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main {
+        margin-left: 0;
+    }
 }
