@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="link nav-link" href="#about">About me</a></li>
+                <li class="nav-item"><a class="link nav-link" href="#work-experience">Work experience</a></li>
+                <li class="nav-item"><a class="link nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="link nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="link nav-link" href="#languages">Languages</a></li>
+                <li class="nav-item"><a class="link nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <h1 class="header-name">Aliaksei Paliukhovich</h1>
+        <h2 class="header-job-title">Web-developer</h2>
+    </header>
+
+    <div class="container">
+        <aside class="aside">
+            <div class="aside-section" id="image" title="Okay, it's an avatar from github. So... According to the requirements, I can put an avatar, not a photo. No time for that, some other time.....">
+                <img class="aside-image" src="https://avatars.githubusercontent.com/u/173690429?v=4" alt="Aliaksei Paliukhovich's photo">
+            </div>
+
+            <section class="aside-section aside-skills" id="skills">
+                <h3 class="aside-header">Skills</h3>
+                <ul class="aside-list">
+                    <li class="aside-list-item">HTML</li>
+                    <li class="aside-list-item">CSS</li>
+                    <li class="aside-list-item">JS</li>
+                    <li class="aside-list-item">Git</li>
+                </ul>
+            </section>
+
+            <section class="aside-section aside-languages" id="languages">
+                <h3 class="aside-header">Foreign languages</h3>
+                <ul class="aside-list">
+                    <li class="aside-list-item">English A2</li>
+                </ul>
+            </section>
+
+            <section class="aside-section aside-contacts">
+                <h3 class="aside-header">Contacts</h3>
+                <ul class="aside-list">
+                    <li class="aside-list-item">Discord: alr4</li>
+                    <li class="aside-list-item">Telegram: @alex_teanow</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="main">
+            <section class="main-section main-about" id="about">
+                <h2 class="main-header">About me</h2>
+                <p class="section-content">Once again, I'm trying to break into IT. I've been coding for a long time, but mostly at a basic level and in different languages.</p>
+            </section>
+
+            <section class="main-section main-work" id="work-experience">
+                <h2 class="main-header">Work experience</h2>
+                <ul class="section-list">
+                    <li class="section-list-item">None. However...</li>
+                    <li class="section-list-item">Completed up to and including Stage 2 of the training program. Various projects carried out within the RSS JS/FE 2021 stage0-stage2 training program.</li>
+                </ul>
+            </section>
+
+            <section class="main-section main-code" id="code-example">
+            <h2 class="main-header">Code example</h2>
+<pre><code>
+function digitalRoot(n) {
+    const out = n
+        .toString()
+        .split('')
+        .reduce((c, n) => c + parseInt(n), 0);
+    return out &lt; 10 ? out : digitalRoot(out);
+}
+</code></pre>
+            </section>
+
+            <section class="main-section main-projects" id="projects">
+                <h2 class="main-header">Projects</h2>
+                <p class="section-content">Some projects completed during the RSS JS/FE 2021 stage0-stage2 training program:</p>
+
+                <article class="projects-article">
+                    <h3 class="article-header"><a class="link projects-link" href="https://rolling-scopes-school.github.io/alexpalx-JSFE2022Q1/online-store/" target="_blank">BeHealth online store</a></h3>
+                    <p class="article-content">Online delivery service for ready-to-eat meals.</p>
+                </article>
+
+                <article class="projects-article">
+                    <h3 class="article-header"><a class="link projects-link" href="https://alexpalx.github.io/rss-stage0-projects/random-jokes/" target="_blank">Quote generator</a></h3>
+                    <p class="article-content">Generating citations. API is not available in some countries, so only local version works, there is a button for switching.</p>
+                </article>
+
+                <article class="projects-article">
+                    <h3 class="article-header"><a class="link projects-link" href="https://alexpalx.github.io/rss-stage0-projects/random-game/" target="_blank">Tic-Tac-Tetris</a></h3>
+                    <p class="article-content">A game similar to Tetris, but with 3-in-a-row rules.</p>
+                </article>
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <ul class="footer-list">
+            <li class="footer-item"><a class="link footer-link" href="https://github.com/alre4">GitHub</a></li>
+            <li class="footer-item">2024</li>
+            <li class="footer-item"><a href="https://rs.school/courses/javascript-preschool-ru"><img class="rss-logo" src="images/rs_school_logo.svg" alt="RS School logo"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
