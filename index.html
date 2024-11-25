@@ -80,7 +80,7 @@ function digitalRoot(n) {
     const out = n
         .toString()
         .split('')
-        .reduce((c, n) => c + parseInt(n), 0);
+        .reduce((c, n) =&gt; c + parseInt(n), 0);
     return out &lt; 10 ? out : digitalRoot(out);
 }
 </code></pre>
